@@ -1,6 +1,7 @@
 {
 	"main": "dist/_worker.js/index.js",
 	"name": "astro-temp",
+	"account_id": "d3e569d2d49281d2d3ebe1eb5069dea4",
   "compatibility_date": "2026-02-02",
   "compatibility_flags": [
     "nodejs_compat",
