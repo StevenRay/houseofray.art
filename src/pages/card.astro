@@ -1,0 +1,193 @@
+---
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nycole Ray — House of Ray. Choreographer, dancer, and educator." />
+    <meta name="theme-color" content="#FDF8F3" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet" />
+    <title>Nycole Ray | House of Ray</title>
+    <style>
+      .card-container {
+        min-height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1.5rem;
+      }
+      .card {
+        width: 100%;
+        max-width: 380px;
+        text-align: center;
+      }
+      .monogram {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: var(--purple);
+        color: var(--cream);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        font-family: var(--font-serif);
+        font-size: 2rem;
+        letter-spacing: 0.025em;
+      }
+      .name {
+        font-family: var(--font-serif);
+        font-size: 2rem;
+        font-weight: 400;
+        color: var(--purple);
+        margin: 0 0 0.25rem;
+        line-height: 1.2;
+      }
+      .org {
+        font-family: var(--font-sans);
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--mauve-dark);
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin: 0 0 2rem;
+      }
+      .divider {
+        width: 40px;
+        height: 1px;
+        background: var(--mauve);
+        margin: 0 auto 2rem;
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+      }
+      .link-item {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.875rem 1.25rem;
+        border: 1px solid var(--mauve-light);
+        border-radius: 0.5rem;
+        text-decoration: none;
+        color: var(--purple-dark);
+        font-family: var(--font-sans);
+        font-size: 0.9375rem;
+        transition: all 0.2s ease;
+      }
+      .link-item:hover {
+        border-color: var(--purple);
+        background: var(--mauve-light);
+        background: rgba(229, 212, 210, 0.3);
+      }
+      .link-item svg {
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        color: var(--purple-light);
+      }
+      .save-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        width: 100%;
+        padding: 0.875rem 1.5rem;
+        background: var(--gold);
+        color: var(--purple-dark);
+        font-family: var(--font-sans);
+        font-size: 0.9375rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.2s ease;
+        margin-bottom: 2.5rem;
+      }
+      .save-btn:hover {
+        background: var(--gold-light);
+      }
+      .save-btn svg {
+        width: 18px;
+        height: 18px;
+      }
+      .qr-section {
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--mauve-light);
+      }
+      .qr-label {
+        font-family: var(--font-sans);
+        font-size: 0.75rem;
+        color: var(--mauve-dark);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+      .qr-code {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
+      }
+      .qr-code img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body class="bg-cream text-purple-dark antialiased">
+    <div class="card-container">
+      <div class="card">
+        <!-- Monogram -->
+        <div class="monogram">NR</div>
+
+        <!-- Name & Org -->
+        <h1 class="name">Nycole Ray</h1>
+        <p class="org">House of Ray</p>
+
+        <div class="divider"></div>
+
+        <!-- Contact Links -->
+        <div class="links">
+          <a href="mailto:houseofray.art@gmail.com" class="link-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+            houseofray.art@gmail.com
+          </a>
+
+          <a href="https://houseofray.art" target="_blank" rel="noopener noreferrer" class="link-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5a17.92 17.92 0 0 1-8.716-2.247m0 0A8.966 8.966 0 0 1 3 12c0-1.264.26-2.466.732-3.558" />
+            </svg>
+            houseofray.art
+          </a>
+        </div>
+
+        <!-- Save Contact -->
+        <a href="/nycole-ray.vcf" download="Nycole Ray.vcf" class="save-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+          </svg>
+          Save Contact
+        </a>
+
+        <!-- QR Code -->
+        <div class="qr-section">
+          <p class="qr-label">Scan to share</p>
+          <div class="qr-code">
+            <img src="/qr-card.svg" alt="QR code linking to this card" width="140" height="140" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

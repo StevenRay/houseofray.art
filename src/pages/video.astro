@@ -1,15 +1,35 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-const videos = [
-  { title: "Diaspora" },
-  { title: "Nineteenth" },
-  { title: "Rising" },
-  { title: "Love Songs" },
-  { title: "Opaque" },
-  { title: "The Breath Within" },
-  { title: "Above & Below" },
+const activeVideos = [
+  {
+    title: "Memory of a Memory Lost",
+    vimeoId: "1165830947",
+    vimeoHash: "b3ebfe58c2",
+  },
+  {
+    title: "Above & Below",
+    vimeoId: "1166454791",
+    vimeoHash: "3c99e44566",
+  },
+  {
+    title: "The Breath Within",
+    vimeoId: "1166454885",
+    vimeoHash: "16621ec240",
+  },
+  {
+    title: "Love Tri-Tango",
+    vimeoId: "1064802502",
+    vimeoHash: "3103ecf562",
+  },
 ];
+
+// Future videos — uncomment and move to activeVideos when ready
+// { title: "Diaspora" },
+// { title: "Nineteenth" },
+// { title: "Rising" },
+// { title: "Love Songs" },
+// { title: "Opaque" },
 ---
 
 <Layout title="Video | House of Ray" description="Video documentation of choreographic works by Nycole Ray.">
@@ -22,15 +42,19 @@ const videos = [
     </header>
 
     <div class="grid gap-12 md:gap-16">
-      {videos.map((video) => (
+      {activeVideos.map((video) => (
         <article>
           <h2 class="font-serif text-xl md:text-2xl mb-4 text-purple">
             {video.title}
           </h2>
-          <div class="relative aspect-video bg-cream-dark border border-mauve-light rounded-lg flex items-center justify-center">
-            <p class="text-mauve-dark text-sm">
-              Video coming soon
-            </p>
+          <div class="relative aspect-video rounded-lg overflow-hidden">
+            <iframe
+              src={`https://player.vimeo.com/video/${video.vimeoId}?h=${video.vimeoHash}&title=0&byline=0&portrait=0`}
+              class="absolute inset-0 w-full h-full"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </article>
       ))}
