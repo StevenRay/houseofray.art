@@ -1,5 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const events = [
+  {
+    title: "Tri-City Dance Academy Summer Intensive",
+    dates: "June 8–12, 2026",
+    location: "Cleveland, Ohio",
+  },
+  {
+    title: "Dallas Ballet Center Summer Intensive",
+    dates: "July 13–24, 2026",
+    location: "Dallas, Texas",
+  },
+];
 ---
 
 <Layout title="Teaching | House of Ray" description="Teaching schedule and upcoming events for Nycole Ray.">
@@ -11,8 +24,23 @@ import Layout from '../layouts/Layout.astro';
       </p>
     </header>
 
-    <div class="text-center py-16">
-      <p class="text-mauve-dark text-lg">Calendar of events coming soon.</p>
-    </div>
+    {events.length > 0 ? (
+      <ul class="grid gap-8 md:gap-10">
+        {events.map((event) => (
+          <li class="border-b border-mauve-light pb-8 last:border-b-0">
+            <h2 class="font-serif text-xl md:text-2xl mb-2 text-purple">
+              {event.title}
+            </h2>
+            <p class="text-mauve-dark">
+              {event.dates} &middot; {event.location}
+            </p>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <div class="text-center py-16">
+        <p class="text-mauve-dark text-lg">Calendar of events coming soon.</p>
+      </div>
+    )}
   </div>
 </Layout>

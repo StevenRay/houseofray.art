@@ -7,9 +7,8 @@ Current videos are full-length — replace with clips/highlight teasers when ava
 
 | Performance Title          | Vimeo ID     | Vimeo Hash   | Vimeo Link                                                        | Status          |
 |---------------------------|-------------|-------------|------------------------------------------------------------------|-----------------|
-| Love Tri-Tango            | 1064802502  | 3103ecf562  | https://vimeo.com/1064802502/3103ecf562                          | Full video live |
-| Memory of a Memory Lost | 1165830947  | b3ebfe58c2  | https://vimeo.com/1165830947/b3ebfe58c2                          | Full video live |
-| Above & Below             | 1166454791  | 3c99e44566  | https://vimeo.com/1166454791/3c99e44566                          | Full video live |
+| Memory of a Memory Lost   | 1187184611  | 1ae1695ef6  | https://vimeo.com/1187184611/1ae1695ef6                          | Full video live |
+| Above & Below             | 1187184597  | 0a9b4580e5  | https://vimeo.com/1187184597/0a9b4580e5                          | Full video live |
 | The Breath Within         | 1166454885  | 16621ec240  | https://vimeo.com/1166454885/16621ec240                          | Full video live |
 
 ## Future Videos (not yet on site)
