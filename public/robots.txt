@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://houseofray.art/sitemap.xml

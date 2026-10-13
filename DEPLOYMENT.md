@@ -29,13 +29,13 @@ There are also MX records for email forwarding and a TXT/SPF record. **Do not mo
 ### How to deploy
 
 ```bash
-cd /Users/concordsteve/Projects/HouseofRay/houseofray.com
+cd /path/to/houseofray.art
 
 # 1. Build the site
 npx astro build
 
 # 2. Deploy to Cloudflare Workers
-npx wrangler deploy
+npx wrangler deploy --config wrangler.jsonc
 ```
 
 That's it. The site will be live at `houseofray.art` within seconds.
@@ -48,3 +48,13 @@ That's it. The site will be live at `houseofray.art` within seconds.
 ### Why Workers instead of Pages?
 
 The Astro Cloudflare adapter compiles the site into a Worker. Using Workers directly gives full control over the deployment and avoids the extra layer of Pages. The DNS Worker route records handle the domain mapping.
+
+## Purple floral release — October 13, 2026
+
+The approved purple parallax design is implemented in `src/pages/` with shared styles and scripts in `public/`. The existing `/connect`, `/card`, vCard, QR assets, and Formspree contact destination are retained.
+
+Gallery navigation is hidden. `/gallery` temporarily redirects to `/`; its concept is retained in `docs/design-archive/gallery-concept.html`, outside published assets.
+
+Previous production Worker version (rollback target): `3b143fc6-d0b2-49c8-bf40-30aa8dd455c2`.
+
+Validation: production build, route/asset audit, desktop/mobile browser review, contact success/failure handling with mocked responses. No test inquiry was sent.
