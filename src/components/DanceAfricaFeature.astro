@@ -1,6 +1,5 @@
 ---
-import { photos } from '../data/dance-africa';
-const cover = photos[0];
+import { cover } from '../data/dance-africa';
 ---
 <section id="dance-africa" class:list={["event-feature", { "has-photo": cover }]} aria-labelledby="event-feature-title">
   {cover && <a class="event-feature-photo" href="/dance-africa/" aria-label="View Dance Africa photographs"><img src={cover.src} alt={cover.alt} width={cover.width} height={cover.height} loading="lazy" /></a>}
