@@ -1,5 +1,5 @@
 ---
-import SocialMeta from '../components/SocialMeta.astro';
+import Seo from '../components/Seo.astro';
 import '../styles/global.css';
 ---
 
@@ -8,13 +8,16 @@ import '../styles/global.css';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Nycole Ray — House of Ray. Choreographer, dancer, and educator." />
+    <Seo
+      title="Nycole Ray | House of Ray"
+      description="Digital business card for Nycole Ray — dancer, choreographer, and educator in Dallas, Texas."
+      noindex
+    />
     <meta name="theme-color" content="#FDF8F3" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet" />
-    <title>Nycole Ray | House of Ray</title>
     <style>
       .card-container {
         min-height: 100dvh;
@@ -143,7 +146,7 @@ import '../styles/global.css';
         height: 100%;
       }
     </style>
-  <SocialMeta title="Nycole Ray | House of Ray" description="Nycole Ray — House of Ray. Choreographer, dancer, and educator." /></head>
+  </head>
   <body class="bg-cream text-purple-dark antialiased">
     <div class="card-container">
       <div class="card">
@@ -185,7 +188,7 @@ import '../styles/global.css';
         <div class="qr-section">
           <p class="qr-label">Scan to share</p>
           <div class="qr-code">
-            <img src="/qr-card.svg" alt="QR code linking to this card" width="140" height="140" />
+            <img src="/qr-card.svg" alt="QR code that opens Nycole Ray's House of Ray contact card" width="140" height="140" />
           </div>
         </div>
       </div>

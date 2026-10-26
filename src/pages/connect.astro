@@ -1,5 +1,5 @@
 ---
-import SocialMeta from '../components/SocialMeta.astro';
+import Seo from '../components/Seo.astro';
 import '../styles/global.css';
 ---
 
@@ -8,13 +8,16 @@ import '../styles/global.css';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Get in touch with Nycole Ray — House of Ray. Choreography, dance, education." />
+    <Seo
+      title="Connect | Nycole Ray — House of Ray"
+      description="Short contact form for reaching Nycole Ray — House of Ray. Choreography, dance, education."
+      noindex
+    />
     <meta name="theme-color" content="#FDF8F3" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet" />
-    <title>Connect | Nycole Ray — House of Ray</title>
     <style>
       .connect-container {
         min-height: 100dvh;
@@ -192,7 +195,7 @@ import '../styles/global.css';
         margin: 0;
       }
     </style>
-  <SocialMeta title="Connect | Nycole Ray — House of Ray" description="Get in touch with Nycole Ray — House of Ray. Choreography, dance, education." /></head>
+  </head>
   <body class="bg-cream text-purple-dark antialiased">
     <div class="connect-container">
       <div class="connect-card">

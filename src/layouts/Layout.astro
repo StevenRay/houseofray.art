@@ -1,5 +1,5 @@
 ---
-import SocialMeta from '../components/SocialMeta.astro';
+import Seo from '../components/Seo.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
@@ -9,7 +9,7 @@ interface Props {
   description?: string;
 }
 
-const { title, description = "Nycole Ray is a choreographer, dancer, and educator based in Dallas, Texas." } = Astro.props;
+const { title, description = "Nycole Ray is a dancer, choreographer, and educator based in Dallas, Texas." } = Astro.props;
 ---
 
 <!doctype html>
@@ -17,14 +17,12 @@ const { title, description = "Nycole Ray is a choreographer, dancer, and educato
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={description} />
+    <Seo title={title} description={description} />
     <meta name="theme-color" content="#FDF8F3" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet" />
-    <title>{title}</title>
-  <SocialMeta title={title} description={description} />
   </head>
   <body class="min-h-screen flex flex-col bg-cream text-purple-dark antialiased">
     <a
