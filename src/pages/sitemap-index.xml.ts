@@ -9,13 +9,10 @@ export const prerender = true;
  * URL already referenced externally — resolves instead of returning 404.
  */
 export const GET: APIRoute = () => {
-  const lastmod = new Date().toISOString().slice(0, 10);
-
   const body = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>${SITE_URL}/sitemap.xml</loc>
-    <lastmod>${lastmod}</lastmod>
   </sitemap>
 </sitemapindex>
 `;

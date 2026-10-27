@@ -1,6 +1,5 @@
 ---
-// /gallery existed in the first version of the site. Permanent redirect so any
-// remaining inbound links and crawl history consolidate onto the home page.
+// Keep the gallery temporarily hidden until more content is available.
 export const prerender = false;
-return Astro.redirect("/", 301);
+return Astro.redirect("/", 302);
 ---

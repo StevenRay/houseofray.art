@@ -4,12 +4,9 @@ import { SITEMAP_PAGES, SITE_URL } from '../data/site';
 export const prerender = true;
 
 export const GET: APIRoute = () => {
-  const lastmod = new Date().toISOString().slice(0, 10);
-
   const urls = SITEMAP_PAGES.map(
     ({ path, changefreq, priority }) => `  <url>
     <loc>${SITE_URL}${path}</loc>
-    <lastmod>${lastmod}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`,
