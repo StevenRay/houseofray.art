@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "images": "node scripts/build-images.mjs",
     "astro": "astro"
   },
   "dependencies": {
@@ -14,5 +15,8 @@
     "astro": "^5.17.1",
     "qrcode": "^1.5.4",
     "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
   }
 }

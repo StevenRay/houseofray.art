@@ -1,3 +1,8 @@
 User-agent: *
 Allow: /
+
+# /card/ and /connect/ are thin utility pages (QR business card and a standalone
+# contact form). They are left crawlable so their noindex tag can be read, and
+# deliberately kept out of the sitemap.
+
 Sitemap: https://houseofray.art/sitemap.xml
